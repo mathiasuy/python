@@ -12,7 +12,8 @@ Se puede ver la cantidad de elementos utilizando la función 'len'
 print(len(lista)) --> Imprime # elementos de 'lista'
 ```
 
-##Mutación de listas.
+## Mutación de listas.
+
 Dada la lista _lista[2, 3, "carlos"]_
     
     Para cambiar un elemento de la lista: 
