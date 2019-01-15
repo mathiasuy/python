@@ -1,4 +1,4 @@
-### LISTAS
+# LISTAS
 
 Las listas pueden guardar cualquier tipo de elementos. 
 Pueden ser todos del mismo tipo o combinados
