@@ -1,4 +1,4 @@
-'''
+
 print("datos de la primera persona")
 #para cargar por teclado una cadena de caracteres utilizamos la función input
 # las variables pueden tener muchas funcinoes, aqui tienes una que la utilizamos para almacenar el valor introducido por teclado
@@ -66,7 +66,6 @@ for x in range(20,31): #"Por cada x en el rango de 20 a 31 (se parece más a un 
     print(x)
     #SALIDA: 20....30 (el último no lo incluye)
 
-'''
 
 #### LISTA ####
 mi_lista = ['Juan', 'Antonio', 'Pedro', 'Herminio']
@@ -77,30 +76,3 @@ for nombre in mi_lista:
 mi_tupla = ('rosa', 'verde', 'celeste', 'amarillo')
 for color in mi_tupla:
     print(color)
-
-    ### LISTAS ###
-"""
-Las listas pueden guardar cualquier tipo de elementos. 
-Pueden ser todos del mismo tipo o combinados
-
-lista_de_enteros = [10, 11, 12]
-lista_combinada = ["carlos", 10.2]
-
-Se puede ver la cantidad de elementos utilizando la función 'len'
-print(len(lista)) --> Imprime # elementos de 'lista'
-
-Mutación de listas.
-Dada la lista lista[2, 3, "carlos"]
-    Para cambiar un elemento de la lista: lista[3] = "nuevo valor"
-    Para agregar un nuevo valor al final de la lista se utiliza el operador append(): lista.append(23)
-    Para insertar un elemento en una posición determinada de la lista y deslpazar un lugar 
-    el elemento que esté en esa posición se usa insert:
-    lista.insert(2,76) (Se inserta en la posición 2)
-    Para eliminar el valor de una lista utilizar el operador remove(): lista.remove(2)
-    PAra buscar un valor de la lista usaremos el operador 'in'_ 23 in lista
-    Para saber la posición de un valor en una lista usaremos 'index()':
-    lista.index(3)
-
-
-"""
-

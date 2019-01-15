@@ -1,51 +1,3 @@
-# LISTAS
-
-Las listas pueden guardar cualquier tipo de elementos. 
-Pueden ser todos del mismo tipo o combinados
-```
-lista_de_enteros = [10, 11, 12]
-lista_combinada = ["carlos", 10.2]
-```
-
-Se puede ver la cantidad de elementos utilizando la función 'len'
-```
-print(len(lista)) --> Imprime # elementos de 'lista'
-```
-
-## Mutación de listas.
-
-Dada la lista _lista[2, 3, "carlos"]_
-    
-    Para cambiar un elemento de la lista: 
-    ```
-    lista[3] = "nuevo valor"
-    ```
-    
-    Para agregar un nuevo valor al final de la lista se utiliza el operador _append()_: 
-    ```
-    lista.append(23)
-    ```
-    
-    Para insertar un elemento en una posición determinada de la lista y deslpazar un lugar 
-    el elemento que esté en esa posición se usa insert:
-    ```
-    lista.insert(2,76) #(Se inserta en la posición 2)
-    ```
-    
-    Para eliminar el valor de una lista utilizar el operador _remove()_: 
-    ```
-    lista.remove(2)
-    ```
-
-    PAra buscar un valor de la lista usaremos el operador _in_ 23 in lista
-    Para saber la posición de un valor en una lista usaremos _index()_:
-    ```
-    lista.index(3)
-    ```
-
-#FUNCIONES
-
-```
 def nombreFuncion():
     global numero1
     global numero2 #variables de acceso global
@@ -90,4 +42,31 @@ def funcionParesArbitrarios(parametroFijo, **arbitrarios):
 
 funcionParesArbitrarios("Fijo", clave1="arbitrario1", clave2="arbitrario2", clave3="arbitrario3")
 
-```
+
+# Función suma
+def sumarlos(v1, v2, *lista):
+    suma = v1 + v2
+    for x in range(len(lista)):
+        suma = suma+lista[x]
+    return suma
+
+def mayor(lista):
+    may = lista[0]
+    for x in range(1,len(lista)):
+        if lista[x] > may:
+            may = lista[x]
+    return may
+
+def menor(lista):
+    men = lista[0]
+    for x in range(1, len(lista)):
+        if lista[x] < men:
+            men = lista[x]
+    return men
+
+listaValores = [10 , 56, 26, 32]
+print("Lista completa: ")
+print(listaValores)
+print("Suma de los elementos: ", sumarlos(10,56,26,32))
+print("El mayor es: " , mayor(listaValores))
+print("El menor es: " , menor(listaValores))
